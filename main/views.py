@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, Httpresponse
 
 def homepage(request):
     return render(request, "index.html")
@@ -7,3 +7,6 @@ def homepage(request):
 
 def test(request):
     return render(request, "test.html")
+
+def check(request):
+    return Httpresponse("салам класс Httpresponse")
